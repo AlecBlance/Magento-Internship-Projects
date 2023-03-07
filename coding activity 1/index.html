@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/stylesheet.css" />
+    </head>
+    <body>
+        <div class="contact_us">
+            <div class="image">
+                <img src="img/image.jpg" alt="contact_us_image">
+            </div>
+            <form action="api/send.php" method="post">
+                <div class="title">
+                    <h1>CONTACT US</h1>
+                </div>
+                <div class="inputs">
+                    <div class="name">
+                        <label for="name">Your Name <span class="red">* </span><span class="required">(required)</span></label>
+                        <input name="name" type="text" id="name" autocomplete="off">
+                    </div>
+                    <div class="email">
+                        <label for="email">Your Email <span class="red">* </span><span class="required">(required)</span></label>
+                        <input name="email" type="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="message">
+                        <label for="message">Your Message <span class="red">* </span><span class="required">(required)</span></label>
+                        <textarea name="message" id="message" autocomplete="off"></textarea>
+                    </div>
+                </div>
+                <p class="error_incomplete" hidden></p>
+                <p class="success" hidden>Your message has been sent successfully!</p>
+                <div class="submit">
+                    <input type="submit" name="submit" value="Submit Message">
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
