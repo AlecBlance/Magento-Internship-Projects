@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Karla", sans-serif;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+body {
+	justify-content: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: #c2c8d1; 
+}
+
+.warranty_form {
+	width: 445px;
+	/* min-width: 10px; */
+	/* max-width: 34vw; */
+	/* min-width: 33%; */
+	border-radius: 18px;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_input > div > div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: #f2f4f5;
+}
+
+label {font-weight: 500;color: #666c7c;margin: 14px 0 6px 0;}
+
+input[type="submit"] {
+    background-color: #1d202b;
+    color: white;
+    padding: 15px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.header {
+    margin-bottom: 19px;
+}
+
+input:focus-visible, textarea:focus-visible {
+    border: 1px solid #292a2d;
+}
+
+.error.result {
+    color: #c85d5c;
+    background-color: #f5e7e7;
+}
+
+.result {
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 14px;
+    padding: 12px;
+}
+
+.success.result {
+    background-color: #b2ffb2;
+    color: #4b714b;
+}
+
+.header p {
+    margin-top: 14px;
+}
